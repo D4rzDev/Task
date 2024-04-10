@@ -8,8 +8,8 @@ import Footer from "@/sections/Footer/Footer";
 const poppins = Poppins({ subsets: ["latin"], weight: ['100','200','300','400','500','600','700','800','900'] });
 
 export const metadata: Metadata = {
-  title: "Darel Honrejas",
-  description: "Portfolio",
+  title: "CBS",
+  description: "Task",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className="flex flex-col items-center justify-center font-poppins">
         <ThemeProvider  attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
           {children}

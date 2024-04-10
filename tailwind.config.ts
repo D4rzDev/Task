@@ -10,6 +10,9 @@ const config = {
 	],
   prefix: "",
   theme: {
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -18,10 +21,7 @@ const config = {
       },
     },
     extend: {
-      height: {
-        imgClamp: 'clamp(9.375rem, 6.25rem + 15.625vw, 18.75rem)',
-        heroImg: 'clamp(15.625rem, 13.5417rem + 10.4167vw, 21.875rem)'
-      },
+      
       fontSize:{
         lgClamp: 'clamp(2rem, 1.6667rem + 1.6667vw, 3rem);',
         smClamp:'clamp(0.8rem, 0.7333rem + 0.3333vw, 1rem)',

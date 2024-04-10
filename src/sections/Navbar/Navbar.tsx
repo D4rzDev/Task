@@ -11,24 +11,36 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import { IoMail } from 'react-icons/io5';
+
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/variant';
 
 const social = [
   {
-    icon: <FaLinkedin size={25}/>,
-    url: ''
+    id: 0,
+    url: '/facebook.png'
   },
   {
-    icon: <FaGithubSquare size={25}/>,
-    url: ''
+    id: 1,
+    url: '/discord.png'
   },
   {
-    icon: <IoMail size={25}/>,
-    url: ''
+    id: 2,
+    url: '/instagram.png'
   },
+  {
+    id: 3,
+    url: '/twitter.png'
+  },
+  {
+    id: 4,
+    url: '/linkedin.png'
+  },
+  {
+    id: 5,
+    url: '/telegram.png'
+  },
+ 
 ]
 
 export default function Navbar() {
@@ -37,14 +49,17 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   };
   return (
-    <nav className=' sticky flex items-center justify-center max-w-[1280px] top-0 z-20 h-12 px-4 md:px-8 py-8 bg-inherit w-full'>
-        <div className=' flex items-center justify-between w-full'>
+    <nav className=' sticky flex items-center justify-center top-0 z-10 h-20 bg-inherit w-full'>
+        <div className=' flex items-center justify-between max-w-[1280px] min-w-[350px] w-[100%]'>
             <a href="/">
-                <Image src='/d.ev.svg' width={50} height={50} alt='logo'/>
+                <Image src='/logo.png' width={70} height={70} alt='logo'/>
             </a>
             <ul className=' hidden md:flex items-center justify-center gap-6'>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
+                <a href="/">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#carreer">Carreer</a>
                 <a href="#contact">Contact</a>
                 <ThemeSwitcher/>
             </ul>
@@ -65,42 +80,60 @@ export default function Navbar() {
                       >
                           <ThemeSwitcher/>
                       </motion.div>
-                          <motion.a href="#projects"
+                          <motion.a href="/"
                             variants={fadeIn('up', .2)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once:false, amount: 0.2}}
-                          >Projects</motion.a>
-                          <motion.a href="#about"
+                          >Home</motion.a>
+                          <motion.a href="#services"
                              variants={fadeIn('up', .3)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once:false, amount: 0.2}}
-                          >About</motion.a>
-                          <motion.a href="#contact"
+                          >Services</motion.a>
+                          <motion.a href="#about"
                              variants={fadeIn('up', .4)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once:false, amount: 0.2}}
-                          >Contact</motion.a>
-                          <div className=' flex items-center gap-6  mt-10'>
-                          { social.map(( socials) => (
-                            <motion.a href="" 
-                            variants={fadeIn('up', .5)}
+                          >About Us</motion.a>
+                          <motion.a href="/"
+                             variants={fadeIn('up', .6)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once:false, amount: 0.2}}
-                            className='  text-zinc-700 dark:text-zinc-200'>
-                              {socials.icon}
-                              </motion.a>
-                          ))}
-                        </div>
+                          >Portfolio</motion.a>
+                          <motion.a href="/"
+                             variants={fadeIn('up', .8)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{once:false, amount: 0.2}}
+                          >Carreer</motion.a>
+                          <motion.a href="#contact"
+                             variants={fadeIn('up', 1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{once:false, amount: 0.2}}
+                          >Contact</motion.a>
+                           <motion.div 
+                           variants={fadeIn('up', 1.2)}
+                          initial='hidden'
+                          whileInView={'show'}
+                          viewport={{once:false, amount: 0.2}}
+                           className=' flex items-center justify-center gap-4 '>
+                              { social.map(( socials, idx) => (
+                                <div key={socials.id}>
+                                  <Image src={socials.url} width={25} height={25} alt='social media icon' />
+                                </div>
+                              ))}
+                            </motion.div>
                         <motion.p 
-                        variants={fadeIn('up', .6)}
+                        variants={fadeIn('up', 1.4)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once:false, amount: 0.2}}
-                        className=' text-xs text-center'>Copyright © Darel Honrejas. All rights reserved.</motion.p>
+                        className=' text-xs text-center'>@2023 All Rights Reserved</motion.p>
                     </div>
                   </SheetContent>
                 </Sheet>
