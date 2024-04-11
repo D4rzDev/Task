@@ -19,10 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=' grid place-items-center'>
+      <body className={`${poppins.className} grid place-items-center`}>
         <ThemeProvider  attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
-          {children}
+          <div className="w-full max-w-[1280px] px-6">
+            {children}
+          </div>
           <Footer/>
         </ThemeProvider>
 

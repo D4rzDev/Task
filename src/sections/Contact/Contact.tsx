@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Contact() {
   return (
     <div id='contact' className=' grid grid-cols-1 md:grid-cols-2 gap-10 py-10 scroll-m-16'>
-        <div className=' flex flex-col items-start gap-4 py-10'>
+        <div className=' flex flex-col items-start gap-4'>
            <motion.div 
                  variants={fadeIn('right', 0.2)}
                 initial='hidden'
@@ -37,9 +37,9 @@ export default function Contact() {
         initial='hidden'
         whileInView={'show'}
         viewport={{once:false, amount: 0.2}}
-        className=' bg-zinc-800 flex items-center py-10 justify-center rounded-md'>
+        className=' bg-zinc-800 flex items-center h-[500px] lg:h-[600px] justify-center rounded-md'>
             <form action="" className=' flex flex-col gap-4'>
-                <input type="text" placeholder='Name' className=' text-smClamp p-4 w-72 lg:w-96 rounded-sm' />
+                <input type="text" placeholder='Name' className=' text-smClamp p-4 w-64 lg:w-96 rounded-sm' />
                 <input type="email" placeholder='Email' className=' text-smClamp p-4 rounded-sm' />
                 <input type="text" placeholder='Phone Number' className=' text-smClamp p-4 rounded-sm' />
                 <input type="text" placeholder='Topic' className=' text-smClamp p-4 rounded-sm' />

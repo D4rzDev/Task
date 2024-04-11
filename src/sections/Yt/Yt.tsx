@@ -34,7 +34,7 @@ export default function Yt() {
             viewport={{once:false, amount: 0.2}}
             className=' grid place-items-center w-full'
             >
-                <iframe className='w-[70%] h-auto' width="500" height="290" src="https://www.youtube.com/embed/iSpAMgJ4qLI?si=FJcN2yLOEwAdPYJB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                <iframe className='w-[70%] h-[180px] lg:h-[250px]' width="500" height="290" src="https://www.youtube.com/embed/iSpAMgJ4qLI?si=FJcN2yLOEwAdPYJB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
             </motion.div>
 
     </div>

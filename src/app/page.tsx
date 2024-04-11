@@ -11,11 +11,12 @@ import Yt from "@/sections/Yt/Yt";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-16 px-4 md:px-10 max-w-[1280px]">
+    <main className="flex flex-col items-center gap-20 md:gap-28 px-6">
       <Hero/>
       <About/>
       <Yt/>
       <Services/>
+      <Clients/>
       <WhyUs/>
       <Contact/>
     </main>

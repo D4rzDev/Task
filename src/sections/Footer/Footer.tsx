@@ -33,8 +33,8 @@ const social = [
 ]
 export default function Footer() {
   return (
-    <footer className='flex flex-col items-center justify-center w-full gap-10 py-10 mt-16 bg-zinc-800'>
-      <div className=' flex flex-col items-center justify-center gap-10 px-4 max-w-[1280px] w-full'>
+    <footer className='flex flex-col items-center justify-center w-full px-4 md:px-10 gap-10 py-10 mt-16 bg-zinc-800'>
+      <div className=' flex flex-col items-center justify-center gap-10 px-4 min-w-[320px] max-w-[1280px] w-full'>
           <motion.img 
           variants={fadeIn('up', .2)}
           initial='hidden'

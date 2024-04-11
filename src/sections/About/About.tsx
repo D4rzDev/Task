@@ -51,17 +51,17 @@ export default function About() {
                 className=' text-smClamp text-zinc-500'>For nearly a decade, the CBS core team has designed and developed cost-effective, scalable software applications, games, and web development solutions. Leveraging our experience and relationships in the IT industry, we've created a unique company that is dedicated to our clients, partners, and co-workers.Unlike other companies that prioritize numbers, we prioritize the success and satisfaction of those we work with, embracing new challenges and opportunities to drive growth and innovation.</motion.p>
             </div>
 
-            <div>
+            <div className=' flex items-center justify-center'>
             <motion.div 
              variants={containerVariant}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.4 }}
-            className=' grid grid-cols-2 lg:grid-cols-3 gap-4'>
+            className='grid w-full grid-cols-2 lg:grid-cols-3 gap-4'>
                 {data.map(( icon, idx)=>(
                     <motion.div key={idx} 
                     variants={itemVariant}
-                    className=' flex items-center justify-center py-8 bg-zinc-800'>
+                    className=' flex items-center justify-center h-[150px] bg-zinc-800'>
                         <Image src={icon.url} width={50} height={50} alt='icon'/>
                     </motion.div>
                 ))}

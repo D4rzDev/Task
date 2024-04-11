@@ -24,7 +24,7 @@ const data =[
 export default function WhyUs() {
   return (
     <div className=' w-full'>
-        <div className='grid place-items-center'>
+        <div className='grid place-items-center gap-4'>
         <motion.h2 
         variants={fadeIn('up', 0.2)}
         initial='hidden'
@@ -43,7 +43,7 @@ export default function WhyUs() {
         initial='hidden'
         whileInView={'show'}
         viewport={{once: false, amount: 0.4 }}
-        className=' grid grid-cols-1 md:grid-cols-3 gap-4 mt-8'>
+        className=' grid grid-cols-1 md:grid-cols-3 gap-4 mt-10'>
             {data.map((datas, idx) =>(
                 <motion.div key={idx} 
                 variants={itemVariant}

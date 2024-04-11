@@ -49,8 +49,8 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   };
   return (
-    <nav className=' sticky flex items-center justify-center px-4 top-0 z-10 h-20 bg-inherit w-full'>
-        <div className=' flex items-center justify-between max-w-[1280px] min-w-[350px] w-[100%]'>
+    <nav className=' sticky flex items-center justify-center px-4 md:px-10 top-0 z-10 h-20 bg-inherit w-full'>
+        <div className=' flex items-center justify-between max-w-[1280px] w-[100%]'>
             <a href="/">
                 <Image src='/logo.png' width={70} height={70} alt='logo'/>
             </a>
@@ -121,7 +121,7 @@ export default function Navbar() {
                           initial='hidden'
                           whileInView={'show'}
                           viewport={{once:false, amount: 0.2}}
-                           className=' flex items-center justify-center gap-4 '>
+                           className=' flex items-center justify-center mt-10 gap-4 '>
                               { social.map(( socials, idx) => (
                                 <div key={socials.id}>
                                   <Image src={socials.url} width={25} height={25} alt='social media icon' />
