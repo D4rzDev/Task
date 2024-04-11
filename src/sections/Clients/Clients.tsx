@@ -76,7 +76,7 @@ export default function Clients() {
                 >
                 <CarouselContent>
                     {data.map((client, index) => (
-                    <CarouselItem key={index} className=" basis-1/3 md:basis-1/4 ">
+                    <CarouselItem key={index} className=" basis-1/2 md:basis-1/3 lg:basis-1/4">
                         <div className="p-1">
                         <Card className=''>
                             <CardContent className="flex aspect-square items-center justify-center p-6">
