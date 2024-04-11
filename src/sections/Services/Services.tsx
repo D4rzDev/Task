@@ -25,7 +25,7 @@ const data = [
      {
         service:'Mobile Development',
         desc:'Creative Brain Studios creates engaging and immersive web games for browsers. From concept to launch, we handle every aspect of the process. Let us develop your next hit web game.',
-        url: '/iphone.png'
+        url: '/mobile.png'
     },
      {
         service:'2d Arts',
@@ -72,16 +72,16 @@ export default function Services() {
         viewport={{once:false, amount: 0.2}}
         className='grid place-content-center'>
 
-              <Carousel className=" w-full max-w-sm">
+              <Carousel className=" w-[300px]">
                 <CarouselContent>
                     {data.map((service, index) => (
                     <CarouselItem key={index}>
                         <div className="p-1">
-                        <Card className=' bg-zinc-800'>
-                            <CardContent className="flex flex-col aspect-square items-center justify-center gap-2 py-10 text-white">
+                        <Card className=' grid place-items-center bg-zinc-800 h-[300px] '>
+                            <CardContent className="flex flex-col  items-center justify-center gap-2 py-10 text-white">
                                 <Image src={service.url} width={50} height={50} alt='icon'/>
                                 <h2 className=' text-lg font-semibold'>{service.service}</h2>
-                                <p className=' text-smClamp text-center text-zinc-500 line-clamp-5'>{service.desc}</p>
+                                <p className=' text-smClamp text-center text-zinc-500 line-clamp-4'>{service.desc}</p>
                             </CardContent>
                         </Card>
 

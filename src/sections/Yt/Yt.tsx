@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Yt() {
   return (
-    <div className=' grid grid-cols-1 md:grid-cols-2 gap-5 w-full py-10 overflow-hidden bg-zinc-800'>
+    <div className=' grid grid-cols-1 md:grid-cols-2 gap-10 w-full py-10 overflow-hidden bg-zinc-800'>
         <div className=' flex flex-col items-start px-6'>
                 <motion.h2 
                 variants={fadeIn('up', 0.2)}
@@ -24,7 +24,7 @@ export default function Yt() {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once:false, amount: 0.2}}
-                className=' relative md:top-10' width={300} height={300}/>
+                className=' relative top-10' width={300} height={300}/>
             </div>
 
              <motion.div
@@ -32,9 +32,9 @@ export default function Yt() {
             initial='hidden'
             whileInView={'show'}
             viewport={{once:false, amount: 0.2}}
-            className=' grid place-items-center'
+            className=' grid place-items-center w-full'
             >
-                <iframe className='w-[80%]' width="500" height="290" src="https://www.youtube.com/embed/iSpAMgJ4qLI?si=FJcN2yLOEwAdPYJB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                <iframe className='w-[70%] h-auto' width="500" height="290" src="https://www.youtube.com/embed/iSpAMgJ4qLI?si=FJcN2yLOEwAdPYJB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
             </motion.div>
 
     </div>

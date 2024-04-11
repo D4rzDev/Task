@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col items-center justify-center font-poppins">
+      <body className=' grid place-items-center'>
         <ThemeProvider  attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
           {children}

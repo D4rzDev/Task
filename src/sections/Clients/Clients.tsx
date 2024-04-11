@@ -66,7 +66,7 @@ export default function Clients() {
         initial='hidden'
         whileInView={'show'}
         viewport={{once:false, amount: 0.2}}
-        className=' w-[70%] mt-6'>
+        className=' w-[70%] mt-6 bg-slate-500 overflow-hidden'>
             <Carousel
             opts={{
                 align: "start",

@@ -49,7 +49,7 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   };
   return (
-    <nav className=' sticky flex items-center justify-center top-0 z-10 h-20 bg-inherit w-full'>
+    <nav className=' sticky flex items-center justify-center px-4 top-0 z-10 h-20 bg-inherit w-full'>
         <div className=' flex items-center justify-between max-w-[1280px] min-w-[350px] w-[100%]'>
             <a href="/">
                 <Image src='/logo.png' width={70} height={70} alt='logo'/>

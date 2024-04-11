@@ -39,7 +39,7 @@ export default function Contact() {
         viewport={{once:false, amount: 0.2}}
         className=' bg-zinc-800 flex items-center py-10 justify-center rounded-md'>
             <form action="" className=' flex flex-col gap-4'>
-                <input type="text" placeholder='Name' className=' text-smClamp p-4 w-96 md:w-72 rounded-sm' />
+                <input type="text" placeholder='Name' className=' text-smClamp p-4 w-72 lg:w-96 rounded-sm' />
                 <input type="email" placeholder='Email' className=' text-smClamp p-4 rounded-sm' />
                 <input type="text" placeholder='Phone Number' className=' text-smClamp p-4 rounded-sm' />
                 <input type="text" placeholder='Topic' className=' text-smClamp p-4 rounded-sm' />

@@ -23,7 +23,8 @@ const data =[
 
 export default function WhyUs() {
   return (
-    <div className=' flex flex-col items-center justify-center py-20 gap-4'>
+    <div className=' w-full'>
+        <div className='grid place-items-center'>
         <motion.h2 
         variants={fadeIn('up', 0.2)}
         initial='hidden'
@@ -53,6 +54,8 @@ export default function WhyUs() {
                 </motion.div>
             ))}
         </motion.div>
+        </div>
+        
     </div>
   )
 }

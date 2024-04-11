@@ -48,7 +48,7 @@ export default function Footer() {
           initial='hidden'
           whileInView={'show'}
           viewport={{once:false, amount: 0.2}}
-          className=' flex items-center justify-center gap-6 text-white'>
+          className=' flex flex-col md:flex-row items-center justify-center gap-6 text-white'>
               <a href="/">Home</a>
               <a href="#services">Services</a>
               <a href="#about">About Us</a>
@@ -72,7 +72,7 @@ export default function Footer() {
           initial='hidden'
           whileInView={'show'}
           viewport={{once:false, amount: 0.2}}
-          className=' flex items-center justify-between w-full text-sm text-zinc-500'>
+          className=' flex flex-col md:flex-row items-center justify-between gap-8 w-full text-sm text-zinc-500'>
             <p>@2023 All Rights Reserved</p>
             <div className=' flex items-center justify-center'>
               <a href="" className=' border-r-2 border-zinz-500 px-5'>Privacy Policy</a>

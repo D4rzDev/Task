@@ -4,7 +4,7 @@ import { fadeIn } from '@/lib/variant'
 
 export default function Hero() {
     return (
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 h-[90svh]">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 h-full md:h-[90svh]">
             <div className=" flex flex-col items-start justify-center py-10">
                 <motion.h1
                 variants={fadeIn('up', 0.2)}
@@ -32,7 +32,7 @@ export default function Hero() {
             whileInView={'show'}
             viewport={{once:false, amount: 0.2}}
             className=" flex items-center justify-center md:justify-end w-full">
-                <Image className=" w-[300px] md:w-[450px]" src='hero.svg' width={500} height={500} alt="Image"/>
+                <Image className=" w-[300px] md:w-[400px]" src='hero.svg' width={500} height={500} alt="Image"/>
             </motion.div>
         </div>
     )
