@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${poppins.className} grid place-items-center`}>
         <ThemeProvider  attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
-          <div className="w-full max-w-[1280px] px-6">
+          <div className="w-full max-w-[1280px] px-4 overflow-y-auto">
             {children}
           </div>
           <Footer/>
