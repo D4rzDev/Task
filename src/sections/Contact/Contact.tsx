@@ -40,11 +40,11 @@ export default function Contact() {
         className=' bg-zinc-800 flex items-center h-[500px] lg:h-[600px] justify-center rounded-md'>
             <form action="" className=' flex flex-col gap-4'>
                 <input type="text" placeholder='Name' className=' text-smClamp p-4 w-64 lg:w-96 rounded-sm' />
-                <input type="email" placeholder='Email' className=' text-smClamp p-4 rounded-sm' />
-                <input type="text" placeholder='Phone Number' className=' text-smClamp p-4 rounded-sm' />
-                <input type="text" placeholder='Topic' className=' text-smClamp p-4 rounded-sm' />
-                <textarea name="message" id="" placeholder='Message...' className=' p-4 rounded-sm'></textarea>
-                <button type='submit' className=' p-4 bg-[#FF9194] rounded-sm'>Send</button>
+                <input type="email" placeholder='Email' className=' text-smClamp p-4 w-64 lg:w-96 rounded-sm' />
+                <input type="text" placeholder='Phone Number' className=' text-smClamp p-4 w-64 lg:w-96 rounded-sm' />
+                <input type="text" placeholder='Topic' className=' text-smClamp p-4 w-64 lg:w-96 rounded-sm' />
+                <textarea name="message" id="" placeholder='Message...' className=' p-4 w-64 lg:w-96 rounded-sm'></textarea>
+                <button type='submit' className=' p-4 w-64 lg:w-96 bg-[#FF9194] rounded-sm'>Send</button>
             </form>
         </motion.div>
     </div>
